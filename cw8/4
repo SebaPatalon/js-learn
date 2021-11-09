@@ -1,0 +1,29 @@
+<style>
+    body{
+        background-color: red;
+    }
+</style>
+<body>
+    <script>
+    console.log("Hello worlds");
+        function obwod() {
+        console.log("działczy");
+        var bok1=document.getElementById("dlgboku").value;
+        if(obwod=="")
+        document.getElementById("cos").innerHTML = "Należy wpisać wartość liczbową";
+        else 
+        { 
+            console.log(bok1*4);
+            var ob = bok1*4
+            document.getElementById("cos").innerHTML = "Obw=4a="+ob;
+        }
+    }
+    </script>
+    <input type="number" id="dlgboku" />
+    <input type="button" value="licz pole" onclick="pole()" />
+    <input type="button" value="licz obwód" onclick="obwod();" />
+    <input>
+    <p id="mess"></p>
+    <p id="cos"></p>
+</body>
+</html>
